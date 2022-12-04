@@ -13,7 +13,7 @@ public class CameraController : MonoBehaviour
         mapWidth = PlayerPrefs.GetInt("mapWidth", 10);
         mapHeight = PlayerPrefs.GetInt("mapHeight", 10);
         mainCamera = Camera.main;
-        int y = (mapWidth > mapHeight ? mapWidth : mapHeight) + 2;
+        int y = (mapWidth > mapHeight ? mapWidth : mapHeight) + 4;
         mainCamera.transform.position = new Vector3(0f, y, -0.5f);
     }
 }
