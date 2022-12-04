@@ -154,7 +154,7 @@ public class MapManager : MonoBehaviour
                         continue;
                     }
                     if (block.x + i >= 0 && block.x + i < mapWidth && block.y + j >= 0 && block.y + j < mapHeight
-                        && blockManagers[block.x + i, block.y + j].currentBlock.name != "FlagBlock")
+                        && blockManagers[block.x + i, block.y + j].currentBlock.name == "BlackBlock")
                     {
                         blockManagers[block.x + i, block.y + j].LeftClick();
                     }
