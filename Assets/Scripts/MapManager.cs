@@ -73,6 +73,10 @@ public class MapManager : MonoBehaviour
                 {
                     return false;
                 }
+                if (blockManagers[x, y].currentBlock.name == "QuestionMarkBlock")
+                {
+                    return false;
+                }
             }
         }
         return true;

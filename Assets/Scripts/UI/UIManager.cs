@@ -51,7 +51,7 @@ public class UIManager : MonoBehaviour
     {
         if(score == 1000000000)
         {
-            highScoreText.text = "Inf";
+            highScoreText.text = "No Record";
         }
         else
         {

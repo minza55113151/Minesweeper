@@ -165,6 +165,10 @@ public class BlockManager : MonoBehaviour
                     Open("FlagBlock");
                     MapManager.instance.flagRemain--;
                 }
+                else
+                {
+                    Open("QuestionMarkBlock");
+                }
                 break;
             case "FlagBlock":
                 //change to question mark block
